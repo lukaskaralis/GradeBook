@@ -1,0 +1,5 @@
+Name	Subject	Grade	
+Lukas Karalis	History	8	
+Mika Zibov	History	9	
+Nikolaj Krilkun	Biology	6	
+Kamin Arabilan	Economics	4	
