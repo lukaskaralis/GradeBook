@@ -56,7 +56,6 @@ public class AddStudent {
                     int val = list.getModel().getSize();
                     PrintWriter writer = null;
                     try{writer = new PrintWriter("Students.txt");
-                        writer = new PrintWriter("StudentsSelected.txt");
                         writer.println(val);
                         for (int i=0;i<val;i++){
                             writer.println(list.getModel().getElementAt(i));

@@ -5,7 +5,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public abstract class StudentPage {
+public abstract class StudentPage implements ActionListener {
     public static void StudentPG(){
         JFrame frame = new JFrame();
         JButton loginButton = new JButton("Watch grades");

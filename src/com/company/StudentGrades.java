@@ -9,9 +9,9 @@ import java.io.PrintWriter;
 public class StudentGrades {
      static void SGrades(){
         JFrame frame = new JFrame();
-        JButton loginButton = new JButton("Watch grades");
-        JLabel intro = new JLabel("GRADES");
-        JButton signOut = new JButton("BACK");
+       JButton loginButton = new JButton("Watch grades");
+       JLabel intro = new JLabel("GRADES");
+       JButton signOut = new JButton("BACK");
 
         intro.setBounds(160, 20, 250, 35);
         intro.setFont(new Font(null, Font.BOLD, 25));
@@ -45,6 +45,7 @@ public class StudentGrades {
         });
 
 
+
         frame.add(loginButton);
         frame.add(intro);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -53,4 +54,5 @@ public class StudentGrades {
         frame.setVisible(true);
         frame.add(signOut);
     }
+
 }

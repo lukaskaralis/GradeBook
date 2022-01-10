@@ -6,7 +6,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.HashMap;
 
-public class LoginPage {
+public class LoginPage extends Person implements ActionListener {
+
 
     public static void LogIn() {
 
@@ -24,16 +25,23 @@ public class LoginPage {
         HashMap<String, String> Student = new HashMap<String, String>();
         HashMap<String, String> Lector = new HashMap<String, String>();
 
-        Lector.put("Linas", "Karalis");
-        Lector.put("Mantas", "Urbonavicius");
-        Lector.put("s","s");
+        Lector l1 = new Lector();
+        l1.setName("Lector");
+        l1.setPassword("123");
+        l1.setStudies("Biology");
+        Lector.put(l1.getName(),l1.getPassword());
 
-        Student.put("Lukas", "Karalis");
-        Student.put("Mindaugas", "Merkys");
-        Student.put("Deividas", "Kernagis");
-        Student.put("b","b");
+        Student s1 = new Student();
+        s1.setName("Student");
+        s1.setPassword("123");
+        s1.setGroup("PI20S");
+        Student.put(s1.getName(),s1.getPassword());
 
-        logininfo.put("a","a");
+        Person admin = new Person();
+        admin.setName("Admin");
+        admin.setPassword("123");
+        logininfo.put(admin.getName(), admin.getPassword());
+
 
             userIDLabel.setBounds(50, 100, 75, 25);
             userPasswordLabel.setBounds(50, 150, 75, 25);
@@ -98,7 +106,10 @@ public class LoginPage {
             resetButton.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent e) {
-
+                    if (e.getSource() == resetButton) {
+                        userIDField.setText("");
+                        userPasswordField.setText("");
+                    }
                 }
             });
 
@@ -115,4 +126,9 @@ public class LoginPage {
             frame.setLayout(null);
             frame.setVisible(true);
         }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+
+    }
 }

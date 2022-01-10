@@ -1,4 +1,9 @@
-3
+8
 PI19A Economics
 PI19A Management
 IS20B Biology
+PI20B Chemistry
+PI19S Chemistry
+PI19A Sociology
+IS20S Management
+PI19A Economics

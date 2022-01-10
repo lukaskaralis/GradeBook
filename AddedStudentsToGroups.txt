@@ -1,7 +1,9 @@
-6
+8
 Onur Clay IS20A
 Martin Montes IS20A
 Aleeza Berg IS20A
 Ebonie Hodges IS20A
 Lukas Karalis IS20S
 Ebonie Hodges IS20S
+Lukas Karalis PI20C
+Chelsie Sharples IS20B

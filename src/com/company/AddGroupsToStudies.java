@@ -125,7 +125,7 @@ public class AddGroupsToStudies {
                         if (list.getSelectedValue() != null) {
                             l3.addElement(list2.getSelectedValue() + " " + list.getSelectedValue());
                             list3.setModel(l3);
-                            l1.removeElementAt(list.getSelectedIndex());
+                            l2.removeElementAt(list2.getSelectedIndex());
                             messageLabel.setForeground(Color.green);
                             messageLabel.setText("Add successful!");
                         } else {
@@ -147,7 +147,7 @@ public class AddGroupsToStudies {
                         messageLabel.setText("");
                         BufferedReader br1 = null;
                         try {
-                            br1 = new BufferedReader(new FileReader("GroupsSelected.txt"));
+                            br1 = new BufferedReader(new FileReader("Groups.txt"));
                             int val = Integer.parseInt(br1.readLine());
                             for (int i = 0; i < val; i++) {
                                 String ss = br1.readLine();
